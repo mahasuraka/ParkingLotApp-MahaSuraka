@@ -23,6 +23,7 @@ This project is written in **Java**, with a clean modular structure and object-o
     - **50% Small**
     - **30% Large**
     - **20% Oversize**
+        - Design choice; can be dynamic ( included in future improvements)
 - Allows:
     - `PARK <plate> <SMALL|LARGE|OVERSIZE>`
     - `EXIT <plate>`
@@ -51,6 +52,14 @@ src/
 
 ## How to Run
 
+### Terminal:
+
+- compile
+    - cd src
+    - javac Main.java
+- Run
+    - java Main 
+
 ### VS Code:
 
 - Open project folder
@@ -65,7 +74,7 @@ Enter total parking slots:
 PARK KA01 SMALL
 PARK KA02 LARGE
 PARK KA03 SMALL
-PARK KA04 SMALL
+PARK KA04 OVERSIZE
 EXIT KA02
 STATUS
 QUIT
@@ -73,7 +82,9 @@ QUIT
 
 ## Future Enhancements
 
-- Make slot allocations dynamic based on number or percentages
+- Allow users to define slot distribution dynamically, either by entering precise slot counts or customizable percentage ratios.
 - Add billing logic
 - Add timestamp tracking
 - Add GUI or web interface
+- Add file-based or database persistence for saving parking state.
+
