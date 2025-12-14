@@ -76,6 +76,4 @@ QUIT
 - Make slot allocations dynamic based on number or percentages
 - Add billing logic
 - Add timestamp tracking
-- Add file persistence
-- Add REST API endpoints
 - Add GUI or web interface
